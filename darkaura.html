@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dark Aura X Panel</title>
+    <title>Dark Aura X</title>
     <style>
         body { background: #060606; color: white; font-family: Arial; margin: 0; padding-bottom: 80px; }
         .login { display: flex; justify-content: center; align-items: center; height: 100vh; background: #0a0a0a; }
@@ -32,9 +32,6 @@
         .popup { display: none; position: fixed; top: 30%; left: 10%; right: 10%; background: #111; border: 2px solid red; border-radius: 15px; padding: 20px; text-align: center; color: #ff4444; z-index: 99; }
         .overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 98; }
         .warn { text-align: center; color: #ff0000; font-size: 10px; padding: 15px; }
-        .welcome { background:#1a0000;border:2px solid red;padding:15px;text-align:center;margin:5px 10px;border-radius:10px; }
-        .welcome h2 { color:#ff4444;margin:0;font-size:20px; }
-        .welcome p { color:#0f0;margin:5px 0 0 0;font-size:14px; }
     </style>
 </head>
 <body>
@@ -51,12 +48,8 @@
 </div>
 
 <div class="panel" id="panelPage">
-    <div class="welcome">
-        <h2>💀 Welcome to Dark Aura X Panel!</h2>
-        <p>You are now Logged in! 40 Features Ready!</p>
-    </div>
     <div class="header">
-        <h2>💀 DARK AURA X PANEL</h2>
+        <h2>💀 DARK AURA X</h2>
         <p>Free Fire Panel | v18 | 40 Best Features</p>
     </div>
     <div class="bar">
@@ -138,7 +131,7 @@ function doLogin() {
             var msg = new SpeechSynthesisUtterance("Welcome to Dark Aura X Panel. You are now logged in.");
             msg.lang = "en-US";
             msg.rate = 0.8;
-            setTimeout(function() { speechSynthesis.speak(msg); }, 300);
+            setTimeout(function() { speechSynthesis.speak(msg); }, 500);
         } catch(e) {}
     } else {
         document.getElementById('err').style.display = 'block';
