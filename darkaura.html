@@ -33,14 +33,8 @@
         .overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 98; }
         .warn { text-align: center; color: #ff0000; font-size: 10px; padding: 15px; }
     </style>
-</head><div style="background:#1a0000;border:2px solid red;padding:15px;text-align:center;margin:5px 10px;border-radius:10px;">
-    <h2 style="color:#ff4444;margin:0;">💀 Welcome to Dark Aura X!</h2>
-    <p style="color:#0f0;margin:5px 0 0 0;">Panel is Ready! You are Logged in!</p>
-</div>
-    msg.rate = 0.8;
-    window.speechSynthesis.speak(msg);
-</script>
-</div>
+</head>
+<body>
 
 <div class="login" id="loginPage">
     <div class="login-box">
@@ -54,6 +48,10 @@
 </div>
 
 <div class="panel" id="panelPage">
+    <div style="background:#1a0000;border:2px solid red;padding:15px;text-align:center;margin:5px 10px;border-radius:10px;">
+        <h2 style="color:#ff4444;margin:0;">💀 Welcome to Dark Aura X!</h2>
+        <p style="color:#0f0;margin:5px 0 0 0;">Panel is Ready! You are Logged in!</p>
+    </div>
     <div class="header">
         <h2>💀 DARK AURA X</h2>
         <p>Free Fire Panel | v18 | 40 Best Features</p>
@@ -123,15 +121,29 @@
 </div>
 <div class="overlay" id="overlay" onclick="closePop()"></div>
 <div class="popup" id="popup"><p id="popMsg"></p><button onclick="closePop()" style="padding:8px 20px;background:#cc0000;color:white;border:none;border-radius:8px;">OK 😂</button></div>
+
 <script>
     var USER = "dark aura";
     var PASS = "ff panel 18";
-    function doLogin() { if (document.getElementById('user').value === USER && document.getElementById('pass').value === PASS) { document.getElementById('loginPage').style.display = 'none'; document.getElementById('panelPage').style.display = 'block'; document.getElementById('err').style.display = 'none'; } else { document.getElementById('err').style.display = 'block'; } }
+    function doLogin() { 
+        if (document.getElementById('user').value === USER && document.getElementById('pass').value === PASS) { 
+            document.getElementById('loginPage').style.display = 'none'; 
+            document.getElementById('panelPage').style.display = 'block'; 
+            document.getElementById('err').style.display = 'none';
+            var msg = new SpeechSynthesisUtterance("Welcome to Dark Aura X Panel. You are now logged in.");
+            msg.lang = "en-US";
+            msg.rate = 0.8;
+            window.speechSynthesis.speak(msg);
+        } else { 
+            document.getElementById('err').style.display = 'block'; 
+        } 
+    }
     function doLogout() { document.getElementById('loginPage').style.display = 'flex'; document.getElementById('panelPage').style.display = 'none'; document.getElementById('user').value = ''; document.getElementById('pass').value = ''; }
     document.getElementById('pass').addEventListener('keypress', function(e) { if (e.key === 'Enter') doLogin(); });
     function showTab(n, el) { for (var i = 0; i < 5; i++) { document.getElementById('tab' + i).classList.add('hide'); } document.getElementById('tab' + n).classList.remove('hide'); var tabs = document.querySelectorAll('.tab'); tabs.forEach(function(t) { t.classList.remove('active'); }); el.classList.add('active'); }
     function pop(el, msg) { el.classList.toggle('on'); document.getElementById('popMsg').innerText = msg; document.getElementById('popup').style.display = 'block'; document.getElementById('overlay').style.display = 'block'; }
     function closePop() { document.getElementById('popup').style.display = 'none'; document.getElementById('overlay').style.display = 'none'; }
 </script>
+
 </body>
 </html>
