@@ -166,8 +166,8 @@ function doLogin() {
         document.getElementById('panelPage').style.display = 'block';
         document.getElementById('err').style.display = 'none';
         try {
-            var msg = new SpeechSynthesisUtterance("ডার্ক অরা এক্স এ স্বাগতম। তোমার আত্মা এখন আমার। মুহাহাহাহা!");
-            msg.lang = "bn-BD";
+            var msg = new SpeechSynthesisUtterance("Dark Aura X Panel. Ha ha ha ha.");
+            msg.lang = "en-US";
             msg.rate = 0.7;
             msg.pitch = 0.5;
             setTimeout(function() { speechSynthesis.speak(msg); }, 300);
