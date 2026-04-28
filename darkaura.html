@@ -123,53 +123,12 @@
 <script>
 var USER = "dark aura";
 var PASS = "ff panel 18";
-
-function doLogin() {
-    if (document.getElementById('user').value === USER && document.getElementById('pass').value === PASS) {
-        document.getElementById('loginPage').style.display = 'none';
-        document.getElementById('panelPage').style.display = 'block';
-        document.getElementById('err').style.display = 'none';
-        try {
-            var msg = new SpeechSynthesisUtterance("Welcome to my Dark Aura X Panel");
-            msg.lang = "en-US";
-            msg.rate = 0.8;
-            setTimeout(function() { speechSynthesis.speak(msg); }, 300);
-        } catch(e) {}
-    } else {
-        document.getElementById('err').style.display = 'block';
-    }
-}
-
-function doLogout() {
-    document.getElementById('loginPage').style.display = 'flex';
-    document.getElementById('panelPage').style.display = 'none';
-    document.getElementById('user').value = '';
-    document.getElementById('pass').value = '';
-}
-
-document.getElementById('pass').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') doLogin();
-});
-
-function showTab(n, el) {
-    for (var i = 0; i < 5; i++) { document.getElementById('tab' + i).classList.add('hide'); }
-    document.getElementById('tab' + n).classList.remove('hide');
-    var tabs = document.querySelectorAll('.tab');
-    tabs.forEach(function(t) { t.classList.remove('active'); });
-    el.classList.add('active');
-}
-
-function pop(el, msg) {
-    el.classList.toggle('on');
-    document.getElementById('popMsg').innerText = msg;
-    document.getElementById('popup').style.display = 'block';
-    document.getElementById('overlay').style.display = 'block';
-}
-
-function closePop() {
-    document.getElementById('popup').style.display = 'none';
-    document.getElementById('overlay').style.display = 'none';
-}
+function doLogin() { if (document.getElementById('user').value === USER && document.getElementById('pass').value === PASS) { document.getElementById('loginPage').style.display = 'none'; document.getElementById('panelPage').style.display = 'block'; document.getElementById('err').style.display = 'none'; try { var msg = new SpeechSynthesisUtterance("Welcome to my Dark Aura X Panel"); msg.lang = "en-US"; msg.rate = 0.8; setTimeout(function() { speechSynthesis.speak(msg); }, 300); } catch(e) {} } else { document.getElementById('err').style.display = 'block'; } }
+function doLogout() { document.getElementById('loginPage').style.display = 'flex'; document.getElementById('panelPage').style.display = 'none'; document.getElementById('user').value = ''; document.getElementById('pass').value = ''; }
+document.getElementById('pass').addEventListener('keypress', function(e) { if (e.key === 'Enter') doLogin(); });
+function showTab(n, el) { for (var i = 0; i < 5; i++) { document.getElementById('tab' + i).classList.add('hide'); } document.getElementById('tab' + n).classList.remove('hide'); var tabs = document.querySelectorAll('.tab'); tabs.forEach(function(t) { t.classList.remove('active'); }); el.classList.add('active'); }
+function pop(el, msg) { el.classList.toggle('on'); document.getElementById('popMsg').innerText = msg; document.getElementById('popup').style.display = 'block'; document.getElementById('overlay').style.display = 'block'; }
+function closePop() { document.getElementById('popup').style.display = 'none'; document.getElementById('overlay').style.display = 'none'; }
 </script>
 
 </body>
