@@ -39,27 +39,25 @@
 </head>
 <body>
 
-<!-- LOGIN -->
 <div class="login" id="loginPage">
     <div class="login-box">
         <h2>💀 DARK AURA X</h2>
-        <p style="color:#990000;font-size:11px;">☠️ Enter If You Dare ☠️</p>
-        <input type="text" id="user" placeholder="👤 Username">
-        <input type="password" id="pass" placeholder="🔒 Password">
-        <button onclick="doLogin()">☠️ ACCESS PANEL ☠️</button>
-        <p class="error" id="err">💀 Wrong Password! Try Again Mortal!</p>
+        <p style="color:#990000;font-size:11px;">☠️ ভিতরে আসার সাহস থাকলে প্রবেশ কর ☠️</p>
+        <input type="text" id="user" placeholder="👤 ইউজারনেম">
+        <input type="password" id="pass" placeholder="🔒 পাসওয়ার্ড">
+        <button onclick="doLogin()">☠️ প্রবেশ কর ☠️</button>
+        <p class="error" id="err">💀 ভুল পাসওয়ার্ড! আবার চেষ্টা কর!</p>
     </div>
 </div>
 
-<!-- PANEL -->
 <div class="panel" id="panelPage">
     <div class="header">
         <h2>💀 DARK AURA X 💀</h2>
-        <p>☠️ Free Fire Panel | v18 | 40 Cursed Features ☠️</p>
+        <p>☠️ ফ্রি ফায়ার প্যানেল | v18 | ৪০ টি অভিশপ্ত ফিচার ☠️</p>
     </div>
     <div class="bar">
-        <span>💀 Connected to Dark Realm</span>
-        <button onclick="doLogout()">🚪 Escape</button>
+        <span>💀 অন্ধকার জগতে সংযুক্ত</span>
+        <button onclick="doLogout()">🚪 পালাও</button>
     </div>
     <div class="tabs">
         <div class="tab active" onclick="showTab(0,this)">🎯 Aimbot</div>
@@ -69,65 +67,64 @@
         <div class="tab" onclick="showTab(4,this)">🛡️ Anti-Ban</div>
     </div>
     <div class="list" id="tab0">
-        <div class="item"><span>🎯 Aimbot Silent</span><div class="toggle" onclick="pop(this,'💀 Silent Aim Activated! Death from shadows! ☠️')"></div></div>
-        <div class="item"><span>💀 Aimbot Headshot</span><div class="toggle" onclick="pop(this,'☠️ Headshot Mode! Skull crusher ON! 💀')"></div></div>
-        <div class="item"><span>🔒 Aimbot Lock</span><div class="toggle" onclick="pop(this,'🔒 Soul Locked! No escape! 👻')"></div></div>
-        <div class="item"><span>🎯 Aimbot Body</span><div class="toggle" onclick="pop(this,'💀 Body shots! Bleeding effect! 🩸')"></div></div>
-        <div class="item"><span>🔭 Aim FOV</span><div class="toggle" onclick="pop(this,'👁️ All-seeing eye! Demon vision! 🔥')"></div></div>
-        <div class="item"><span>🎯 Aim Smooth</span><div class="toggle" onclick="pop(this,'🌊 Smooth as death! Silent killer! 💀')"></div></div>
-        <div class="item"><span>🔫 Trigger Bot</span><div class="toggle" onclick="pop(this,'⚡ Auto fire! Hell trigger! 🔥')"></div></div>
-        <div class="item"><span>🎯 Auto Aim</span><div class="toggle" onclick="pop(this,'🎯 Auto death! Soul reaper mode! 💀')"></div></div>
+        <div class="item"><span>🎯 Aimbot Silent</span><div class="toggle" onclick="pop(this,'💀 সাইলেন্ট এম চালু! ছায়া থেকে মৃত্যু! ☠️')"></div></div>
+        <div class="item"><span>💀 Aimbot Headshot</span><div class="toggle" onclick="pop(this,'☠️ হেডশট মোড! খুলি চূর্ণ! 💀')"></div></div>
+        <div class="item"><span>🔒 Aimbot Lock</span><div class="toggle" onclick="pop(this,'🔒 আত্মা লক! পালানোর পথ নেই! 👻')"></div></div>
+        <div class="item"><span>🎯 Aimbot Body</span><div class="toggle" onclick="pop(this,'💀 বডি শট! রক্তপাত! 🩸')"></div></div>
+        <div class="item"><span>🔭 Aim FOV</span><div class="toggle" onclick="pop(this,'👁️ সর্বদ্রষ্টা চোখ! দানব দৃষ্টি! 🔥')"></div></div>
+        <div class="item"><span>🎯 Aim Smooth</span><div class="toggle" onclick="pop(this,'🌊 মৃত্যুর মতো শান্ত! নীরব ঘাতক! 💀')"></div></div>
+        <div class="item"><span>🔫 Trigger Bot</span><div class="toggle" onclick="pop(this,'⚡ অটো ফায়ার! নরকের ট্রিগার! 🔥')"></div></div>
+        <div class="item"><span>🎯 Auto Aim</span><div class="toggle" onclick="pop(this,'🎯 অটো মৃত্যু! আত্মা সংগ্রহকারী! 💀')"></div></div>
     </div>
     <div class="list hide" id="tab1">
-        <div class="item"><span>📦 ESP Box</span><div class="toggle" onclick="pop(this,'📦 Soul boxes revealed! 👻')"></div></div>
-        <div class="item"><span>📏 ESP Line</span><div class="toggle" onclick="pop(this,'📏 Death lines drawn! ☠️')"></div></div>
-        <div class="item"><span>💀 ESP Skeleton</span><div class="toggle" onclick="pop(this,'🦴 Bones revealed! Spooky! 💀')"></div></div>
-        <div class="item"><span>👤 ESP Name</span><div class="toggle" onclick="pop(this,'👤 Names of the damned! 👻')"></div></div>
-        <div class="item"><span>💊 ESP Health</span><div class="toggle" onclick="pop(this,'💊 Life force detected! 🩸')"></div></div>
-        <div class="item"><span>📡 ESP Distance</span><div class="toggle" onclick="pop(this,'📡 Souls nearby: 0m! 👻')"></div></div>
-        <div class="item"><span>🔫 ESP Weapon</span><div class="toggle" onclick="pop(this,'🔫 Weapons of hell! 🔥')"></div></div>
-        <div class="item"><span>🧱 Wallhack</span><div class="toggle" onclick="pop(this,'🧱 Walls are nothing! Ghost mode! 👻')"></div></div>
+        <div class="item"><span>📦 ESP Box</span><div class="toggle" onclick="pop(this,'📦 আত্মার বাক্স দৃশ্যমান! 👻')"></div></div>
+        <div class="item"><span>📏 ESP Line</span><div class="toggle" onclick="pop(this,'📏 মৃত্যুর রেখা টানা! ☠️')"></div></div>
+        <div class="item"><span>💀 ESP Skeleton</span><div class="toggle" onclick="pop(this,'🦴 কঙ্কাল দৃশ্যমান! ভৌতিক! 💀')"></div></div>
+        <div class="item"><span>👤 ESP Name</span><div class="toggle" onclick="pop(this,'👤 অভিশপ্ত নামগুলো! 👻')"></div></div>
+        <div class="item"><span>💊 ESP Health</span><div class="toggle" onclick="pop(this,'💊 প্রাণশক্তি সনাক্ত! 🩸')"></div></div>
+        <div class="item"><span>📡 ESP Distance</span><div class="toggle" onclick="pop(this,'📡 আত্মা কাছেই: 0m! 👻')"></div></div>
+        <div class="item"><span>🔫 ESP Weapon</span><div class="toggle" onclick="pop(this,'🔫 নরকের অস্ত্র! 🔥')"></div></div>
+        <div class="item"><span>🧱 Wallhack</span><div class="toggle" onclick="pop(this,'🧱 দেয়াল কিছু না! ভূত মোড! 👻')"></div></div>
     </div>
     <div class="list hide" id="tab2">
-        <div class="item"><span>💨 Speed Hack</span><div class="toggle" onclick="pop(this,'💨 Demon speed! 🏃💨')"></div></div>
-        <div class="item"><span>🕊️ Fly Hack</span><div class="toggle" onclick="pop(this,'🕊️ Flying like a cursed soul! 👻')"></div></div>
-        <div class="item"><span>🦘 Jump Hack</span><div class="toggle" onclick="pop(this,'🦘 Jump to hell! 🔥')"></div></div>
-        <div class="item"><span>🎯 No Recoil</span><div class="toggle" onclick="pop(this,'🎯 Steady hands of death! 💀')"></div></div>
-        <div class="item"><span>🎯 No Spread</span><div class="toggle" onclick="pop(this,'🎯 Bullets of doom! ☠️')"></div></div>
-        <div class="item"><span>⚡ Fast Reload</span><div class="toggle" onclick="pop(this,'⚡ Demon reload! Lightning fast! ⚡')"></div></div>
-        <div class="item"><span>🔫 Unlimited Ammo</span><div class="toggle" onclick="pop(this,'🔫 Infinite bullets of hell! 🔥')"></div></div>
-        <div class="item"><span>🎯 Crosshair</span><div class="toggle" onclick="pop(this,'🎯 Mark of the beast! 666 🎯')"></div></div>
+        <div class="item"><span>💨 Speed Hack</span><div class="toggle" onclick="pop(this,'💨 দানব গতি! 🏃💨')"></div></div>
+        <div class="item"><span>🕊️ Fly Hack</span><div class="toggle" onclick="pop(this,'🕊️ অভিশপ্ত আত্মার মতো উড়ো! 👻')"></div></div>
+        <div class="item"><span>🦘 Jump Hack</span><div class="toggle" onclick="pop(this,'🦘 নরকে লাফ! 🔥')"></div></div>
+        <div class="item"><span>🎯 No Recoil</span><div class="toggle" onclick="pop(this,'🎯 মৃত্যুর স্থির হাত! 💀')"></div></div>
+        <div class="item"><span>🎯 No Spread</span><div class="toggle" onclick="pop(this,'🎯 ধ্বংসের গুলি! ☠️')"></div></div>
+        <div class="item"><span>⚡ Fast Reload</span><div class="toggle" onclick="pop(this,'⚡ দানব রিলোড! বিদ্যুৎ গতি! ⚡')"></div></div>
+        <div class="item"><span>🔫 Unlimited Ammo</span><div class="toggle" onclick="pop(this,'🔫 নরকের অসীম গুলি! 🔥')"></div></div>
+        <div class="item"><span>🎯 Crosshair</span><div class="toggle" onclick="pop(this,'🎯 শয়তানের চিহ্ন! ৬৬৬ 🎯')"></div></div>
     </div>
     <div class="list hide" id="tab3">
-        <div class="item"><span>💎 Diamond Hack</span><div class="toggle" onclick="pop(this,'💎 Cursed diamonds! Soul price! 💀')"></div></div>
-        <div class="item"><span>🪙 Gold Hack</span><div class="toggle" onclick="pop(this,'🪙 Blood gold! 🩸')"></div></div>
-        <div class="item"><span>👑 VIP Unlock</span><div class="toggle" onclick="pop(this,'👑 VIP in hell! 😈')"></div></div>
-        <div class="item"><span>🎁 Bundle Unlock</span><div class="toggle" onclick="pop(this,'🎁 Cursed bundles! 👻')"></div></div>
-        <div class="item"><span>🎨 Skin Unlock</span><div class="toggle" onclick="pop(this,'🎨 Demon skins! 🔥')"></div></div>
-        <div class="item"><span>🕺 Emote Unlock</span><div class="toggle" onclick="pop(this,'🕺 Dance of the dead! 💀')"></div></div>
-        <div class="item"><span>🎫 Elite Pass</span><div class="toggle" onclick="pop(this,'🎫 Ticket to hell! ☠️')"></div></div>
-        <div class="item"><span>🏆 Rank Hack</span><div class="toggle" onclick="pop(this,'🏆 King of the damned! 👑')"></div></div>
+        <div class="item"><span>💎 Diamond Hack</span><div class="toggle" onclick="pop(this,'💎 অভিশপ্ত ডায়মন্ড! আত্মার মূল্য! 💀')"></div></div>
+        <div class="item"><span>🪙 Gold Hack</span><div class="toggle" onclick="pop(this,'🪙 রক্ত সোনা! 🩸')"></div></div>
+        <div class="item"><span>👑 VIP Unlock</span><div class="toggle" onclick="pop(this,'👑 নরকে ভিআইপি! 😈')"></div></div>
+        <div class="item"><span>🎁 Bundle Unlock</span><div class="toggle" onclick="pop(this,'🎁 অভিশপ্ত বান্ডেল! 👻')"></div></div>
+        <div class="item"><span>🎨 Skin Unlock</span><div class="toggle" onclick="pop(this,'🎨 দানব স্কিন! 🔥')"></div></div>
+        <div class="item"><span>🕺 Emote Unlock</span><div class="toggle" onclick="pop(this,'🕺 মৃতের নাচ! 💀')"></div></div>
+        <div class="item"><span>🎫 Elite Pass</span><div class="toggle" onclick="pop(this,'🎫 নরকের টিকিট! ☠️')"></div></div>
+        <div class="item"><span>🏆 Rank Hack</span><div class="toggle" onclick="pop(this,'🏆 অভিশপ্ত রাজা! 👑')"></div></div>
     </div>
     <div class="list hide" id="tab4">
-        <div class="item"><span>🛡️ Anti-Ban</span><div class="toggle" onclick="pop(this,'🛡️ Demon protection! 0%! 😈')"></div></div>
-        <div class="item"><span>🛡️ Anti-Cheat Bypass</span><div class="toggle" onclick="pop(this,'🛡️ Bypassing mortal rules! 👻')"></div></div>
-        <div class="item"><span>⛔ Anti-Blacklist</span><div class="toggle" onclick="pop(this,'⛔ Cursed forever! 💀')"></div></div>
-        <div class="item"><span>🧹 Clean RAM</span><div class="toggle" onclick="pop(this,'🧹 Cleaning souls! 👻')"></div></div>
-        <div class="item"><span>🗑️ Clear Data</span><div class="toggle" onclick="pop(this,'🗑️ Erasing existence! 💀')"></div></div>
-        <div class="item"><span>📱 Device Spoof</span><div class="toggle" onclick="pop(this,'📱 Demon device! 🔥')"></div></div>
-        <div class="item"><span>🔒 SSL Bypass</span><div class="toggle" onclick="pop(this,'🔒 Breaking chains! ⛓️')"></div></div>
-        <div class="item"><span>🌐 VPN Bypass</span><div class="toggle" onclick="pop(this,'🌐 Ghost network! 👻')"></div></div>
+        <div class="item"><span>🛡️ Anti-Ban</span><div class="toggle" onclick="pop(this,'🛡️ দানব সুরক্ষা! ০%! 😈')"></div></div>
+        <div class="item"><span>🛡️ Anti-Cheat Bypass</span><div class="toggle" onclick="pop(this,'🛡️ নিয়ম ভঙ্গ! 👻')"></div></div>
+        <div class="item"><span>⛔ Anti-Blacklist</span><div class="toggle" onclick="pop(this,'⛔ চিরকাল অভিশপ্ত! 💀')"></div></div>
+        <div class="item"><span>🧹 Clean RAM</span><div class="toggle" onclick="pop(this,'🧹 আত্মা পরিষ্কার! 👻')"></div></div>
+        <div class="item"><span>🗑️ Clear Data</span><div class="toggle" onclick="pop(this,'🗑️ অস্তিত্ব মুছে ফেলা! 💀')"></div></div>
+        <div class="item"><span>📱 Device Spoof</span><div class="toggle" onclick="pop(this,'📱 দানব ডিভাইস! 🔥')"></div></div>
+        <div class="item"><span>🔒 SSL Bypass</span><div class="toggle" onclick="pop(this,'🔒 শিকল ভাঙ্গা! ⛓️')"></div></div>
+        <div class="item"><span>🌐 VPN Bypass</span><div class="toggle" onclick="pop(this,'🌐 ভূত নেটওয়ার্ক! 👻')"></div></div>
     </div>
-    <div class="warn">💀 PRANK PANEL | 40 CURSED FEATURES | NOTHING REAL | YOU WILL BE BANNED! 💀</div>
+    <div class="warn">💀 প্র্যাংক প্যানেল | ৪০ অভিশপ্ত ফিচার | কিছুই কাজ করে না | ব্যান হবে! 💀</div>
 </div>
 <div class="overlay" id="overlay" onclick="closePop()"></div>
-<div class="popup" id="popup"><p id="popMsg"></p><button onclick="closePop()" style="padding:8px 20px;background:#8b0000;color:#ff0000;border:1px solid #ff0000;border-radius:8px;">💀 OK 💀</button></div>
+<div class="popup" id="popup"><p id="popMsg"></p><button onclick="closePop()" style="padding:8px 20px;background:#8b0000;color:#ff0000;border:1px solid #ff0000;border-radius:8px;">💀 ঠিক আছে 💀</button></div>
 
 <script>
 var USER = "dark aura";
 var PASS = "ff panel 18";
 
-// Scary sounds using Web Audio API
 function playScarySound(freq, type) {
     try {
         var ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -168,15 +165,13 @@ function doLogin() {
         document.getElementById('loginPage').style.display = 'none';
         document.getElementById('panelPage').style.display = 'block';
         document.getElementById('err').style.display = 'none';
-        // Evil voice
         try {
-            var msg = new SpeechSynthesisUtterance("Welcome to Dark Aura X. Your soul is now mine. Muahahaha!");
-            msg.lang = "en-US";
+            var msg = new SpeechSynthesisUtterance("ডার্ক অরা এক্স এ স্বাগতম। তোমার আত্মা এখন আমার। মুহাহাহাহা!");
+            msg.lang = "bn-BD";
             msg.rate = 0.7;
             msg.pitch = 0.5;
             setTimeout(function() { speechSynthesis.speak(msg); }, 300);
         } catch(e) {}
-        // Scary sound
         setTimeout(function() { playEvilLaugh(); }, 100);
     } else {
         document.getElementById('err').style.display = 'block';
